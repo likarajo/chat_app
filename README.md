@@ -19,6 +19,7 @@ npm install
 * Run `npm install`
 * Sign up for *CometChat PRO* and create your application
     * Create an ApiKey
-* Put your AppID and ApiKey into *src/config.js* file
+* Copy `.env.example` to `.env` and set `REACT_APP_COMETCHAT_APP_ID`, `REACT_APP_COMETCHAT_API_KEY` and `REACT_APP_COMETCHAT_REGION`. Never commit `.env`, which is git-ignored.
+    * Create React App bundles these values into the browser build, so use a CometChat key meant for client-side use. Don't use a server or REST API key.
 * Run `npm start`
 * A browser will open at *localhost:3000*
